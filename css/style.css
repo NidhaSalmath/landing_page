@@ -166,19 +166,20 @@ body {
 
 /* image_section start */
 .image1 {
-    width: 580px;
-    height: 560px;
+    width: 595px;
+    height: 580px;
     position: absolute;
-    top: 180px;
+    top: 170px;
     left: 620px;
+    filter: drop-shadow(13px 13px 30px rgb(255, 255, 255,0.249));
 }
 
 .image2 {
     width: 520px;
-    height: 210px;
+    height: 190px;
     position: absolute;
-    top: 530px;
-    left: 650px;
+    top: 559px;
+    left: 619px;
     z-index: 2;
 }
 
@@ -186,7 +187,7 @@ body {
     width: 150px;
     height: 350px;
     position: relative;
-    top: 235px;
+    top: 265px;
     left: 840px;
     z-index: 1;
     filter: grayscale(55%);
