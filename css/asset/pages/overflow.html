@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow_in_CSS</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            overflow: auto;
+        }
+        .box::-webkit-scrollbar {
+            width: 5px;
+        }
+        .box::-webkit-scrollbar-thumb {
+            background-color: blueviolet;
+            border-radius: 10px;
+
+        }
+        .box::-webkit-scrollbar-track {
+            background-color: lightblue;
+            border-radius: 5px;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum nemo nisi illum, deserunt placeat accusantium
+            ipsam ipsum! Debitis, accusamus atque! Provident in autem consequatur optio laborum nemo obcaecati porro
+            aperiam, ipsum quisquam quas ad deleniti eaque voluptate dolorem! Quasi, sunt reiciendis. Eaque nemo
+            reiciendis maxime officia molestiae delectus a assumenda ut magnam esse quo, ipsum quod fuga doloremque
+            accusantium facilis qui laboriosam ullam, tenetur voluptate at recusandae! Consequatur placeat eligendi
+            nesciunt expedita tenetur possimus sapiente ex suscipit similique eveniet corrupti, dolorem accusantium
+            delectus molestiae quo obcaecati esse facere nihil dolorum velit reiciendis voluptates. Nostrum molestias
+            quis rem atque? Voluptatibus, corrupti.</p>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_in_CSS</title>
+</head>
+<style>
+    .box {
+        padding: 20px 0;
+        background-color: bisque;
+        color: brown;
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    /* .box5 {
+        /* grid-column: 2/span 2; */
+    /* grid-row:1/span 2; */
+    /* grid-area: 1/2/3/4; */
+
+     .box1 {
+        grid-area: header;
+    }
+
+    .box2 {
+        grid-area: menuu;
+    }
+
+    .box3 {
+        grid-area: main;
+    }
+
+    .box4 {
+        grid-area: adv;
+    }
+
+    .box5 {
+        grid-area: footer;
+    }
+
+    .container {
+        height: 100vh;
+        /* background-color: rgb(105, 93, 95); */
+        display: grid;
+        /* grid-template-columns: auto auto auto auto;
+        grid-template-rows: 100px 300px; */
+        gap: 20px;
+        /* justify-content: left; */
+        grid-template-areas: 'header header header header header header'
+                             'menuu main main main adv adv'
+                             'menuu footer footer footer footer footer';
+
+
+    }
+</style>
+
+<body>
+        <section>
+            <div class="container">
+                <div class="box box1">header</div>
+                <div class="box box2">menu</div>
+                <div class="box box3">main</div>
+                <div class="box box4">adv</div>
+                <div class="box box5">footer</div>
+                <!-- <div class="box box6">BOX_6</div>
+                <div class="box box7">BOX_7</div>
+                <div class="box box8">BOX_8</div> -->
+            </div>
+        </section>
+</body>
+
+</html>

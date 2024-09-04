@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gride_template_area_in_CSS</title>
+    <style>
+        .box {
+            padding: 20px 0;
+            background-color: rgb(228, 143, 188);
+            color: rgb(76, 68, 135);
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .box1 {
+            grid-area: header;
+        }
+
+        .box2 {
+            grid-area: menuu;
+        }
+
+        .box3 {
+            grid-area: sidebar;
+        }
+
+        .box4 {
+            grid-area: main;
+        }
+
+        .box5 {
+            grid-area: adv;
+        }
+
+        .box6 {
+            grid-area: footer;
+        }
+
+        .container {
+            height: 100vh;
+            display: grid;
+            gap: 20px;
+            grid-template-areas: 'header header header header header header header header'
+                'menuu menuu menuu menuu menuu menuu menuu menuu'
+                'sidebar sidebar main main main main adv adv'
+                'sidebar sidebar main main main main adv adv'
+                'sidebar sidebar main main main main adv adv'
+                'sidebar sidebar main main main main adv adv'
+                'sidebar sidebar main main main main adv adv'
+                'footer footer footer footer footer footer footer footer';
+        }
+
+        @media screen and (max-width:576px) {
+            .container {
+                height: 100vh;
+                display: grid;
+                gap: 20px;
+                grid-template-areas: 'header header header header header header'
+                    'menuu menuu menuu menuu menuu menuu'
+                    'main main main main main main'
+                    'main main main main main main'
+                    'main main main main main main'
+                    'main main main main main main'
+                    'main main main main main main'
+                    'footer footer footer footer footer footer ';
+                    
+            }
+            .box3 {
+                display: none;
+            }
+            .box5 {
+                display: none;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="box box1">header</div>
+            <div class="box box2">menu</div>
+            <div class="box box3">sidebar</div>
+            <div class="box box4">main</div>
+            <div class="box box5">adv</div>
+            <div class="box box6">footer</div>
+        </div>
+    </section>
+
+</body>
+
+</html>
